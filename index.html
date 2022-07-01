@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="pr">
+  <head>
+    <!-- <title>alireza</title> -->
+    <title> تاکسی اینترنتی تپسی - اپلیکیشن درخواست خودرو و پیک | TAPSI </title>
+    <link rel="shortcut icon" href="https://tapsi.ir/images/favicon.ico">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/356f5d90fd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootrstrap 4 -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <!-- bootrstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body dir="ltr" class="bg-white">
+<input type="radio" name="radio" id="clasic" checked class="clasic">
+<input type="radio" name="radio" id="motor" class="motor">
+<input type="radio" name="radio" id="auto" class="auto">
+<input type="radio" name="radio" id="plas" class="plas">
+<input type="radio" name="radio" id="tel" class="tel">
+<input type="radio" name="radio" id="hamyar" class="hamyar">
+<input type="radio" name="radio" id="khat" class="khat">
+<input type="radio" name="radio" id="taxi" class="taxi">
+<input type="radio" name="radio" id="line" class="line">
+<!-- header -->
+<div class="container-fluid position-fixed start-0 w-100 bg-light border-bottom " style="z-index: 2222;">
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <nav class="navbar navbar-expand-xl bg-light" dir="rtl">
+        <div class="navbar-brand">
+          <svg xmlns="http://www.w3.org/2000/svg" width="102" height="22" viewBox="0 0 102 22">
+                <path fill="#000" class="one" d="M102 5.946h-3.222v4.28H91.8v-4.28h-3.221v4.28h-5.637a1.878 1.878 0 0 1-1.879-1.872V5.946h-3.221v2.408a1.878 1.878 0 0 1-1.879 1.873 1.878 1.878 0 0 1-1.879-1.873V5.946h-3.221v2.408a1.878 1.878 0 0 1-1.879 1.873h-1.879V5.946h-3.22v4.28h-17.18v3.212h3.758v.535c0 2.656-2.167 4.816-4.831 4.816-2.664 0-4.832-2.16-4.832-4.816v-3.746H37.58v3.746c0 4.426 3.613 8.027 8.053 8.027 4.44 0 8.052-3.6 8.052-8.027v-.535H68.985a5.09 5.09 0 0 0 3.489-1.381 5.09 5.09 0 0 0 3.49 1.38 5.09 5.09 0 0 0 3.489-1.38 5.089 5.089 0 0 0 3.489 1.38H102V5.947z"></path>
+                <path fill="#000" class="two" d="M84.702 19.297h3.854V22h3.304v-5.946h-7.158zM102 0h-6.561v2.973H102z"></path>
+                <path fill="#FF5B35" class="three" d="M26.842 11.297H10.737V5.946h16.105zM26.842 22H0v-5.351h26.842z"></path>
+        </svg>
+        </div>
+        <button class="navbar-toggler  shadow-none border-0" data-bs-toggle="collapse" data-bs-target="#collapse">
+          <div class="all-btn">
+            <div class="menu-btn-1" onclick="menuBtnFunction(this)">
+                <span></span>
+            </div>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse justify-content-xl-center" id="collapse">
+          <ul class="navbar-nav" dir="rtl">
+            <li class="nav-item mx-2"> <a href="" class="nav-link  text-dark">پشتیبانی</a> </li>
+            <li class="nav-item mx-2"> <a href="" class="nav-link  text-dark">معرفی راننده</a> </li>
+            <li class="nav-item mx-2"> <a href="" class="nav-link  text-dark">خدمات کسب‌وکارها</a> </li>
+            <li class="nav-item mx-2"> <a href="" class="nav-link  text-dark">فرصت‌های شغلی</a> </li>
+            <li class="nav-item mx-2"> <a href="" class="nav-link  text-dark">وبلاگ</a> </li>
+            <li class="nav-item d-none d-xl-block mx-2"> <a href="" class="nav-link text-light w-100 h-100  d-flex justify-content-center align-items-center">دانلود تپسی</a> </li>
+          </ul>
+        </div>        
+      </nav>
+    </div>
+  </div>
+</div>
+</div>
+<!-- section 1 -->
+<div class="container-fluid section1 py-2 position-relative">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-3 col-xl-2 text-center h-100">
+        <a href="" class="d-flex align-items-center justify-content-center ms-xl-4 py-1 py-xl-2 w-100 ghore">شرکت در قرعه‌کشی</a>
+      </div>
+      <div class="col-9 col-xl-10 d-flex align-items-center justify-content-end text-center text-xl-end">
+        <p class="m-0 fw-bold fpara ">.در قرعه‌کشی ۱۰ سفر به قطر شرکت کنید و با هر سفر تپسی، شانس خود را برای برنده شدن افزایش دهید</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- section 2 -->
+<div class="container-fluid section2 py-4" style="margin-top: 60px;">
+  <div class="row justify-content-center">
+    <div class="col-5 d-none d-xl-block">
+      <img src="https://tapsi.ir/images/home/mockup-phone.png" class="position-absolute" style="transform: scale(.7); top: 92px; left: 30px;" alt="">
+    </div>
+    <div class="col-9 col-xl-5 p-0 d-flex justify-content-center">
+      <div class="cardofs2 py-2 px-4">
+        <h1 class="my-2 my-xl-4 text-light fw-bold tap30">تپسی</h1>
+        <h4 class="my-1 my-xl-3 text-light fw-bold app">اپلیکیشن درخواست خودرو و پیک</h4>
+
+        <div class="row w-100 m-0 my-3 g-2">
+          <div class=" col-12 col-xl-6">
+           <div class="four  d-flex align-items-center justify-content-evenly ">
+            <a href="" class="d-inline-block">دانلود اپلیکیشن مسافران</a>
+            <i class="fab fa-amazon-pay"></i>
+           </div>
+          </div>
+   
+          <div class=" col-12 col-xl-6">
+            <div class="four  d-flex align-items-center justify-content-evenly ">
+             <a href="" class="d-inline-block">وب اپلیکیشن مسافران</a>
+             <i class="bi bi-arrow-down"></i>
+            </div>
+           </div>
+
+           <div class=" col-12 col-xl-6">
+            <div class="four  fourt  d-flex align-items-center justify-content-center">
+             <a href="" class="d-inline-block">ثبت ‌نام راننده</a>
+             <i class="fa fa-car sabt"></i>
+            </div>
+           </div>
+
+
+           <div class=" col-12 col-xl-6">
+            <div class="four fourt d-flex align-items-center justify-content-evenly ">
+             <a href="" class="d-inline-block">دانلود اپلیکیشن رانندگان</a>
+             <i class="bi bi-arrow-down"></i>
+            </div>
+           </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- section 3 -->
+<div class="container section3 border-bottom border-1 bg-white" dir="rtl">
+<div class="row py-1  py-xl-4">
+  <div class="col-6 col-xl-5">
+    <h2 class="servis fw-bold">سرویس‌های تپسی</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+<div class="d-flex justify-content-between radif">
+
+<label for="clasic">
+  <div class="box d-flex flex-column justify-content-evenly align-items-center">
+    <img src="	https://tapsi.ir/images/home/cc-classic.png" alt="" class="img-fluid">
+    <h5>تپسی کلاسیک</h5>
+  </div>
+</label>
+<label for="motor">
+  <div class="box d-flex flex-column justify-content-evenly align-items-center">
+    <img src="	https://tapsi.ir/images/home/cc-motopeyk.png" alt="" class="img-fluid">
+    <h5>موتوپیک</h5>
+  </div>
+</label>
+<label for="auto">
+  <div class="box d-flex flex-column justify-content-evenly align-items-center">
+    <img src="https://tapsi.ir/images/home/cc-autopeyk.png" alt="" class="img-fluid">
+    <h5>اتوپیک</h5>
+  </div>
+</label>
+<label for="plas">
+  <div class="box d-flex flex-column justify-content-evenly align-items-center">
+    <img src="https://tapsi.ir/images/home/cc-plus.png" alt="" class="img-fluid">
+    <h5>تپسی پلاس</h5>
+  </div>
+</label>
+<label for="tel">
+  <div class="box d-flex flex-column justify-content-evenly align-items-center">
+    <img src="https://tapsi.ir/images/home/cc-tel.png" alt="" class="img-fluid">
+    <h5>تپسی تلفنی</h5>
+  </div>
+</label>
+<label for="hamyar">
+  <div class="box d-flex flex-column justify-content-evenly align-items-center">
+    <img src="https://tapsi.ir/images/home/cc-hamyar.png" alt="" class="img-fluid">
+    <h5>همیار</h5>
+  </div>
+</label>
+<label for="khat">
+  <div class="box d-flex flex-column justify-content-evenly align-items-center">
+    <img src="	https://tapsi.ir/images/home/cc-hamkhat.png" alt="" class="img-fluid">
+    <h5>هم‌خط</h5>
+  </div>
+</label>
+<label for="taxi">
+  <div class="box d-flex flex-column justify-content-evenly align-items-center">
+    <img src="	https://tapsi.ir/images/home/cc-taxi.png" alt="" class="img-fluid">
+    <h5>تاکسی</h5>
+  </div>
+</label>
+<label for="line">
+  <div class="box d-flex flex-column justify-content-evenly align-items-center">
+    <img src="	https://tapsi.ir/images/home/cc-line.png" alt="" class="img-fluid">
+    <h5>تپسی لاین</h5>
+  </div>
+</label>
+</div>
+  </div>
+</div>
+
+
+<div class="row align-items-center clasic2 d-none">
+  <div class="col-12 col-xl-6">
+    <h3 class="py-3 ps-5 mt-5 ">تپسی کلاسیک</h3>
+    <p class="paragraph">با سرویس کلاسیک تپسی، یک خودروی اختصاصی برای رسیدن به مقصدتان دارید. تپسی کلاسیک، راهی سریع و آسان برای سفرهای درون‌شهری در هر ساعتی از روز است. در این سرویس، شما امکان تعیین دو یا چند مقصد و همچنین توقف در مسیر را دارید.</p>
+  </div>
+  <div class="col-xl-6 d-none d-xl-block">
+    <img src="	https://tapsi.ir/images/home/illus-classic.webp" alt="" class="img-fluid imglist">
+  </div>
+</div>
+
+
+<div class="row align-items-center motor2 d-none">
+  <div class="col-12 col-xl-6">
+    <h3 class="py-3 ps-5 mt-5 ">موتوپیک</h3>
+    <p class="paragraph">با استفاده از سرویس موتوپیک، بسته‌ها و مرسولاتتان با پیک موتور به مقصد ارسال می‌شوند. این سرویس مناسب زمانی است که می‌خواهید مرسوله سریع‌تر به مقصد برسد. در این سرویس، شما می‌توانید مسیر رسیدن مرسوله‌تان به مقصد را به صورت لحظه‌ای روی نقشه دنبال کنید.</p>
+  </div>
+  <div class="col-xl-6 d-none d-xl-block">
+    <img src="https://tapsi.ir/images/home/illus-motopeyk.webp" alt="" class="img-fluid imglist">
+  </div>
+</div>
+
+<div class="row align-items-center auto2 d-none">
+  <div class="col-12 col-xl-6">
+    <h3 class="py-3 ps-5 mt-5 ">اتوپیک</h3>
+    <p class="paragraph">اتوپیک سرویسی برای ارسال بسته‌های شما با خودرو است. این سرویس، برای زمانی مناسب است که بسته‌های شما، با موتور قابل ارسال نیستند و یا در حین جابجایی، نیاز به مراقبت بیشتری دارند. در این سرویس نیز امکان رصد لحظه ‌به لحظه موقعیت مکانی مرسوله تا زمان رسیدن به مقصد فراهم است.</p>
+  </div>
+  <div class="col-xl-6 d-none d-xl-block">
+    <img src="https://tapsi.ir/images/home/illus-autopeyk.webp" alt="" class="img-fluid imglist">
+  </div>
+</div>
+
+<div class="row align-items-center plas2 d-none">
+  <div class="col-12 col-xl-6">
+    <h3 class="py-3 ps-5 mt-5 ">تپسی پلاس</h3>
+    <p class="paragraph">در سرویس پلاس تاکسی اینترنتی تپسی، خودرویی با مدل بالاتر و عمر کمتر، به دنبال شما خواهد آمد. همچنین، رانندگان این سرویس بالاترین امتیاز را از مسافران دریافت کرده‌اند. در این سرویس که در حال حاضر در تهران فعال است، امکان تعیین چند مقصد یا توقف در حین سفر، وجود دارد.</p>
+  </div>
+  <div class="col-xl-6 d-none d-xl-block">
+    <img src="	https://tapsi.ir/images/home/illus-plus.webp" alt="" class="img-fluid imglist">
+  </div>
+</div>
+
+
+<div class="row align-items-center tel2 d-none">
+  <div class="col-12 col-xl-6">
+    <h3 class="py-3 ps-5 mt-5 ">تپسی تلفنی</h3>
+    <p class="paragraph">سرویس تپسی تلفنی یا ۱۶۳۰، این امکان را به شما می‌دهد که بدون نیاز به اینترنت و اپلیکیشن، درخواست خودرو بدهید. این سرویس تاکسی تلفنی مناسب زمانی است که به هر دلیلی دسترسی به اینترنت یا اپلیکیشن ندارید. همچنین سرویس تلفنی تپسی، راه حلی مناسب برای افرادی است که کار کردن با اپلیکیشن‌های موبایلی برایشان راحت نیست.</p>
+  </div>
+  <div class="col-xl-6 d-none d-xl-block">
+    <img src="https://tapsi.ir/images/home/illus-tel.webp" alt="" class="img-fluid imglist">
+  </div>
+</div>
+
+
+<div class="row align-items-center hamyar2 d-none">
+  <div class="col-12 col-xl-6">
+    <h3 class="py-3 ps-5 mt-5 ">همیار</h3>
+    <p class="paragraph">سرویس همیار تپسی، به جای شما خرید می‌کند. کافیست فروشگاه مورد نظر خود را به عنوان مبدا مشخص کرده و لیست خریدتان را داخل اپ وارد کنید. این خرید‌ها می‌تواند از سوپرمارکت یا داروخانه مورد نظر شما باشند.</p>
+  </div>
+  <div class="col-xl-6 d-none d-xl-block">
+    <img src="	https://tapsi.ir/images/home/illus-hamyar.webp" alt="" class="img-fluid imglist">
+  </div>
+</div>
+
+
+<div class="row align-items-center khat2 d-none">
+  <div class="col-12 col-xl-6">
+    <h3 class="py-3 ps-5 mt-5 ">هم‌خط</h3>
+    <p class="paragraph">سرویس هم‌خط تپسی شما را با مینی‌بوس‌ به مقصد می‌رساند. با استفاده از سرویس هم‌خط بعد از انتخاب مسیر سفر، بلیت‌تان را خریداری کنید و سریع‌تر و راحت‌تر به مقصد برسید. این سرویس خطی بسیار ارزان‌تر از دیگر سرویس‌های تپسی است و شما را سریع‌تر و راحت‌تر از حمل‌ونقل عمومی به مقصدتان می‌رساند. شما می‌توانید از قبل بلیت هم خط را رزرو کنید و با رعایت فاصله اجتماعی به مقصد برسید. سرویس مینی بوس آنلاین فعلا فقط در تهران فعال است.</p>
+  </div>
+  <div class="col-xl-6 d-none d-xl-block">
+    <img src="https://tapsi.ir/images/home/illus-hamkhat.webp" alt="" class="img-fluid imglist">
+  </div>
+</div>
+
+
+<div class="row align-items-center taxi2 d-none">
+  <div class="col-12 col-xl-6">
+    <h3 class="py-3 ps-5 mt-5 ">تاکسی</h3>
+    <p class="paragraph">در سرویس تاکسی تپسی، تاکسی‌های زرد یا سبز شما را به مقصدتان می‌رسانند. این سرویس در حال حاضر در تهران فعال است و چنانچه به دلایلی مانند ورود به محدوده طرح ترافیک یا طرح آلودگی هوا، ترجیح بدهید از تاکسی برای رفت‌وآمدتان استفاده کنید، گزینه مناسبی خواهد بود.</p>
+  </div>
+  <div class="col-xl-6 d-none d-xl-block">
+    <img src="	https://tapsi.ir/images/home/illus-taxi.webp" alt="" class="img-fluid imglist">
+  </div>
+</div>
+
+
+<div class="row align-items-center line2 d-none">
+  <div class="col-12 col-xl-6">
+    <h3 class="py-3 ps-5 mt-5 ">تپسی لاین</h3>
+    <p class="paragraph">تپسی لاین سرویسی است که امکان سفر اشتراکی را برایتان فراهم می‌کند. در این سرویس شما با مسافر دیگری که هم‌مسیرتان است، هم‌سفر خواهید بود و هزینه سفرتان تقسیم می‌شود. این سرویس در حال حاضر به دلیل شرایط همه‌گیری بیماری کرونا از دسترس خارج شده اما با بهبود شرایط می‌توانید از سرویس لاین استفاده کنید.</p>
+  </div>
+  <div class="col-xl-6 d-none d-xl-block">
+    <img src="https://tapsi.ir/images/home/illus-line.webp" alt="" class="img-fluid imglist">
+  </div>
+</div>
+</div>
+<!-- section 4 -->
+<div class="container mb-5 px-4 px-xl-1 bg-white">
+  <div class="row align-items-center">
+    <div class="col-12 col-xl-6">
+      <img src="https://tapsi.ir/images/home/i-mac.webp" alt="" class="img-fluid pink1">
+    </div>
+    <div class="col-12 col-xl-6 d-flex flex-column justify-content-evenly align-items-end">
+      <h2 class="servis fw-bold mt-4 mt-xl-0">خدمات تپسی ویژه کسب‌وکارها</h2>
+      <p class="paragraph my-2 my-xl-3" dir="rtl">
+        پنل سازمانی تپسی، یک سامانه تحت وب است که به سادگی امکان درخواست هم‌زمان تعداد نامحدودی خودرو و پیک را برای کسب‌وکارها و سازمان‌ها فراهم می‌کند. و با استفاده از آن می‌توانید ماموریت های درون‌شهری و ارسال کالاهای خود را به سادگی مدیریت کنید.
+      </p>
+      <span class="d-flex justify-content-between align-items-center mb-3 mb-xl-4 info">
+        <i class="bi bi-chevron-left mt-1 mx-2 p-0"></i>
+        <a href="" class="p-0">اطلاعات بیشتر سرویس سازمانی</a>
+      </span>
+      <a href="" class="panel d-inline-block p-3">ورود و ثبت نام پنل سازمانی</a>
+    </div>
+  </div>
+</div>
+<!-- section 5 -->
+<div class="container mt-5 px-4 px-xl-1 bg-white">
+  <div class="row align-items-center jaki">
+    <div class="col-12 col-xl-6 d-flex flex-column justify-content-evenly align-items-end">
+      <h2 class="servis fw-bold mt-4 mt-xl-0">خرید کد اعتبار تپسی</h2>
+      <p class="paragraph my-3" dir="rtl">
+        کاربران، کسب‌وکارها و سازمان‌ها می‌توانند به تعداد و مبلغ مورد نظرشان، کد اعتبار یا کد تخفیف تپسی تهیه کرده، برای خود، پرسنل و یا مشتریانشان استفاده کنند و از تخفیف‌های ویژه تپسی نیز بهره‌مند شوند.
+        این کدها امکان سفارشی‌سازی بر اساس مبدا، مقصد، زمان، درصد و مبلغ را دارند.
+      </p>
+      <a href="" class="panel d-inline-block p-3">خرید کد اعتبار و تخفیف</a>
+    </div>
+    <div class="col-12 col-xl-6">
+      <img src="	https://tapsi.ir/images/home/macbook.webp" alt="" class="img-fluid pink1">
+    </div>
+  </div>
+</div>
+<!-- section 6 -->
+<div class="container-fluid position-absolute section6 mt-5 mt-xl-0" style="height: 160px; transform: translateY(); z-index: 20; background:url(https://tapsi.ir/images/parallax.jpeg?4cbeb3626ae23a422ff68f732cc4a393); background-size: cover; background-attachment: fixed;">
+  <div class="container d-flex justify-content-around align-items-center con" style="height: 160px;">
+    <div class="abox d-flex flex-column align-items-center justify-content-center" style="color: #f8f9fa;">
+      <h4 class="py-1">امکانات هوشمند</h4>
+      <p class="text-center d-none">سهولت استفاده از اپلیکیشن با پیشنهاد مبدا و مقصد سفر، مقاصد منتخب و پیشنهادهای ویژه شما</p>
+    </div>
+
+    <span style="width: 2px; height: 50px; background-color: #f8f9fa;"></span>
+
+    <div class="abox d-flex flex-column align-items-center justify-content-center" style="color: #f8f9fa;">
+      <h4 class="py-1">دسترس‌پذیری برای توان‌یابان</h4>
+      <p class="text-center d-none">
+        امکان استفاده کاربران نابینا و ناشنوا از اپلیکیشن تپسی و عدم کسر کمیسیون از سفر مسافران ویلچردار</p>
+    </div>
+
+    <span style="width: 2px; height: 50px; background-color: #f8f9fa;"></span>
+
+    <div class="abox d-flex flex-column align-items-center justify-content-center" style="color: #f8f9fa;">
+      <h4 class="py-1">درخواست تلفنی</h4>
+      <p class="text-center d-none">امکان درخواست خودرو بدون نیاز به اینترنت و اپلیکیشن، از طریق تماس با شماره ۱۶۳۰</p>
+    </div>
+
+    <span style="width: 2px; height: 50px; background-color: #f8f9fa;"></span>
+
+    <div class="abox d-flex flex-column align-items-center justify-content-center" style="color: #f8f9fa;">
+      <h4 class="py-1">بسته امنیت سفر</h4>
+      <p class="text-center d-none">امکانات ویژه امنیت سفر، شامل اشتراک سفر و پشتیبانی ۲۴ ساعته تیم متخصصین امنیت تپسی</p>
+    </div>
+  </div>
+</div>
+<!-- section 7 -->
+<div class="container-fluid driverimg section7">
+  <div class="container">
+    <div class="row align-items-start justify-content-center">
+      <div class="col-12 col-xl-6">
+        <img src="https://tapsi.ir/images/home/driver.webp" class="img-fluid shakhs" alt="" style="border-radius: 15px; transform: scale(.88);">
+      </div>
+      <div class="col-12 col-xl-6 d-flex flex-column align-items-end justify-content-evenly ">
+        <h2 class="servis fw-bold mt-4 mt-xl-0 text-end  me-xl-0" style="width: 90%;"> مزایای تپسی برای رانندگان تاکسی اینترنتی</h2>
+        <p class="paragraph my-3" dir="rtl" style="width: 90%;">
+          رانندگان (سفیران) به‌عنوان همکاران تپسی، جایگاه ویژه‌ای برای شرکت دارند. به همین‌دلیل مزایای مختلفی برای آنها در نظر گرفته شده است.
+        </p>
+        <h4 class="mt-3 mt-xl-4 mb-1 text-end">کسب درآمد روزانه، پایدار و بدون محدودیت</h4>
+        <p class="paragraph my-3 d-flex flex-column align-items-start justify-content-evenly w-100 " dir="rtl" style="width: 90%;">
+         <span class="paragraph">۱. امکان تسویه‌ی اعتبار در هر ساعت از شبانه‌روز</span>
+         <span class="paragraph">۲. طرح‌های تشویقی، ماموریت‌ها‌، پاداش و اعطای وام‌های قرض‌الحسنه به‌طور دوره‌ای</span>
+         <span class="paragraph">۳. نمایش مکان‌های پردرخواست در اپلیکیشن و دریافت سفرهای طلایی</span>
+        </p>
+        <h4 class="mt-3 mt-xl-4 mb-1 text-end">تضمین امنیت و پشتیبانی رانندگان</h4>
+        <p class="paragraph my-3 d-flex flex-column align-items-start justify-content-evenly w-100 " dir="rtl" style="width: 90%;">
+         <span class="paragraph">۱. پشتیبانی ۲۴ ساعته</span>
+         <span class="paragraph">۲. امکانات امنیت سفر شامل تماس اضطراری با واحد امنیت و پشتیبانی ۲۴ ساعته تیم امنیت</span>
+        </p>
+        <h4 class="mt-3 mt-xl-4 mb-1 text-end">واریز سهمیه بنزین ویژه رانندگان تپسی</h4>
+        <p class="paragraph my-3 d-flex flex-column align-items-start justify-content-evenly w-100 " dir="rtl" style="width: 90%;">
+         <span class="paragraph">۱. نمایش میزان پیمایش ماهانه درون اپلیکیشن</span>
+         <span class="paragraph">۲. محاسبه‌ی مسافت طی شده تا مسافر در پیمایش</span>
+        </p>
+        <h4 class="mt-3 mt-xl-4 mb-1 text-end">استفاده از مزایای <a href="" class="chasbide">باشگاه رانندگان تپسی</a></h4>
+        <p class="paragraph my-3 d-flex flex-column align-items-start justify-content-evenly w-100 " dir="rtl" style="width: 90%;">
+         <span class="paragraph">۱. تخفیف روی خدمات خودرو مانند بیمه، سرویس‌های دوره‌ای، خرید لاستیک و ...</span>
+         <span class="paragraph">۲. تخفیف روی خدمات رفاهی مانند وام قرض‌الحسنه، خدمات درمانی، خرید اقساطی و ...</span>
+        </p>
+
+
+        <div class="w-100 d-flex flex-column-reverse flex-xl-row align-items-center justify-content-end">
+          <a href="" class="panel panel2 d-inline-block p-3 px-4 me-0 me-xl-2 my-2 my-xl-0 text-center" style="background-color: #2266f4 !important;">دانلود برنامه تپسی راننده</a>
+          <a href="" class="panel panel2  d-inline-block p-3 px-4 ms-0 ms-xl-2 my-2 my-xl-0" style="background-color: #2266f4 !important;">ثبت نام راننده تاکسی آنلاین</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- section 8 -->
+<div class="container-fluid section8 mb-3 mb-xl-0">
+  <div class="container">
+    <div class="row  mt-4 mt-xl-0">
+      <div class="col-12">
+        <h2 class="servis fw-bold text-end me-4 me-xl-0">تازه‌ترین‌های وبلاگ تپسی</h2>
+      </div>
+    </div>
+    <div class="row gy-2 flex-row flex-xl-row-reverse mt-3 mt-xl-5">
+
+
+      <div class="col-12 col-xl-4">
+        <a href="" class="d-inline-block text-decoration-none acard">
+         <div class="card p-4 bg-white border-0">
+           <img src="	https://blog.tapsi.ir/wp-content/uploads/2022/04/etehadie-no-logo-scaled.jpg" class="img-fluid cardimage" alt="">
+           <h4 class="text-end my-3 my-xl-4">دومین دوره انتخابات اتحادیه کسب و کارهای مجازی</h4>
+           <p class="text-end">دیدگاه و اهداف میلاد منشی‌پور، کاندیدای دومین دوره انتخابات اتحادیه کسب و کارهای مجازی درباره‌ من من میلاد منشی پور، مدیرعامل و هم بنیان‌گذار تپسی هستم؛ سال 1394 پس از یک دهه فعالیت در خارج از کشور در ...</p>
+         </div>
+        </a>
+       </div>
+
+
+      <div class="col-12 col-xl-4">
+        <a href="" class="d-inline-block text-decoration-none acard">
+         <div class="card p-4 bg-white border-0">
+           <img src="https://blog.tapsi.ir/wp-content/uploads/2022/03/A68CB9F1-AA36-4B75-99B7-DE475A5FFBDF.jpeg" class="img-fluid cardimage" alt="">
+           <h4 class="text-end my-3 my-xl-4">تخفیف ویژه دیجی‌کالا جت برای کاربران تپسی</h4>
+           <p class="text-end">سوپرمارکت آنلاین «دیجی‌کالا جت» با ارسال سریع محصولات سوپرمارکتی شروع به کار کرده است و سفارش‌های آنلاین سوپرمارکتی را از فروشگاه‌های زنجیره‌ای معتبر و یا فروشگاه‌های منتخب شهرهای تهران، کرج، اصفهان، قم و مشهد تامین می‌کند. این مجموعه برای ...</p>
+         </div>
+        </a>
+       </div>
+
+
+
+
+       <div class="col-12 col-xl-4">
+        <a href="" class="d-inline-block text-decoration-none acard">
+         <div class="card p-4 bg-white border-0">
+           <img src="https://blog.tapsi.ir/wp-content/uploads/2022/03/blog2-scaled.jpg" class="img-fluid cardimage" alt="">
+           <h4 class="text-end my-3 my-xl-4">برای دریافت دز سوم واکسن، با تخفیف به مراکز واکسیناسیون بروید!</h4>
+           <p class="text-end">تپسی با همراهی شرکت سیناژن (تولیدکننده واکسن اسپایکوژن) برای رفتن به مراکز واکسیناسیون و تزریق دز سوم، تخفیف ویژه برایتان درنظر گرفته...</p>
+         </div>
+        </a>
+       </div>
+
+
+    </div>
+  </div>
+</div>
+<!-- section 9 -->
+<div class="container-fluid d-none d-xl-block" style="margin-top: 100px; background: url(https://tapsi.ir/images/map-back.svg?2ad97937f42a681e2ad83a42d8cae6a0); background-size: cover;">
+  <div class="container px-5">
+    <div class="row py-5">
+      <div class="col-12">
+        <h2 class="servis fw-bold text-end me-4 me-xl-0 px-4">تپسی در ایران</h2>
+      </div>
+    </div>
+
+    <div class="row city justify-content-start" dir="rtl">
+
+      <div class="d-flex flex-column justify-content-evenly p-0 my-2 text-center">
+        <span>تهران</span>
+        <span>T e h r a n</span>
+      </div>
+
+      <div class="d-flex flex-column justify-content-evenly p-0 my-2 text-center">
+        <span>کرج</span>
+        <span>K a r a j</span>
+      </div>
+
+      <div class="d-flex flex-column justify-content-evenly p-0 my-2 text-center">
+        <span>مشهد</span>
+        <span>M a s h h a d</span>
+      </div>
+
+      <div class="d-flex flex-column justify-content-evenly p-0 my-2 text-center">
+        <span>اصفهان</span>
+        <span>I s f a h a n</span>
+      </div>
+
+      <div class="d-flex flex-column justify-content-evenly p-0 my-2 text-center">
+        <span>شیراز</span>
+        <span>S h i r a z</span>
+      </div>
+
+
+      <div class="d-flex flex-column justify-content-evenly p-0 my-2 text-center">
+        <span>ارومیه</span>
+        <span>U r m i a</span>
+      </div>
+
+      <div class="d-flex flex-column justify-content-evenly p-0 my-2 text-center">
+        <span>لاهیجان</span>
+        <span>L a h i j a n</span>
+      </div>
+
+      <div class="d-flex flex-column justify-content-evenly p-0 my-2 text-center">
+        <span>رشت</span>
+        <span>R a s h t</span>
+      </div>
+
+      <div class="d-flex flex-column justify-content-evenly p-0 my-2 text-center">
+        <span>انزلی</span>
+        <span>A n z a l i</span>
+      </div>
+
+      <div class="d-flex flex-column justify-content-evenly p-0 my-2 text-center">
+        <span>تبریز</span>
+        <span>T a b r i z</span>
+      </div>
+
+      <div class="d-flex flex-column justify-content-evenly p-0 my-2 text-center">
+        <span>ساری</span>
+        <span>S a r i</span>
+      </div>
+
+
+      <div class="d-flex flex-column justify-content-evenly p-0 my-2 text-center">
+        <span>یزد</span>
+        <span>Y a z d</span>
+      </div>
+
+      <div class="d-flex flex-column justify-content-evenly p-0 my-2 text-center">
+        <span>کرمان</span>
+        <span>K e r m a n</span>
+      </div>
+
+      <div class="d-flex flex-column justify-content-evenly p-0 my-2 text-center">
+        <span>قم</span>
+        <span>Q o m</span>
+      </div>
+
+      <div class="d-flex flex-column justify-content-evenly p-0 my-2 text-center">
+        <span>اهواز</span>
+        <span>A h v a z</span>
+      </div>
+
+      <div class="d-flex flex-column justify-content-evenly p-0 my-2 text-center">
+        <span>بابل</span>
+        <span>B a b o l</span>
+      </div>
+
+      <div class="d-flex flex-column justify-content-evenly p-0 my-2 text-center">
+        <span>قائم‌شهر</span>
+        <span>Q a e m S h a h r</span>
+      </div>
+
+      <div class="d-flex flex-column justify-content-evenly p-0 my-2 text-center">
+        <span>آمل</span>
+        <span>A m o l</span>
+      </div>
+    </div>
+
+    
+
+  </div>
+</div>
+<!-- footer -->
+<div class="container-fluid footer pb-5 pt-2" dir="rtl" style="background-color: #000;">
+    <div class="row">
+      <div class="col-12 col-xl-4 d-flex flex-column align-items-start align-items-xl-center justify-content-evenly">
+        <a href=""><img src="	https://tapsi.ir/images/tapsi-logo-white.svg" alt="" class="mt-5 mb-4 mx-4 mx-xl-0" style="transform: scale(1.5);"></a>
+        <p class="b my-1">اپلیکیشن درخواست خودرو و پیک</p>
+        <p class="my-2 d-none d-xl-block" style="color:rgb(153, 153, 153);"> تمام حقوق مادی و معنوی این وبسایت متعلق به تپسی است.</p>
+      </div>
+
+      <div class="col-12 col-xl-2 d-flex flex-column align-items-start justify-content-evenly linki">
+        <h5 class="fw-bold mt-5 mt-xl-3 my-3">تپسی</h5>
+        <a href="" class="my-1">وبلاگ تپسی</a>
+        <a href="" class="my-1">فرصت شغلی</a>
+        <a href="" class="my-1">تماس با ما</a>
+        <a href="" class="my-1">لوگو و هویت سازمانی</a>
+        <a href="" class="my-1">معرفی راننده به تپسی</a>
+      </div>
+
+      <div class="col-12 col-xl-2 d-flex flex-column align-items-start justify-content-evenly linki">
+        <h5 class="fw-bold mt-5 mt-xl-3 my-3">مسافران</h5>
+        <a href="" class="my-1">دانلود اپ مسافر</a>
+        <a href="" class="my-1">نسخه وب تپسی</a>
+        <a href="" class="my-1">پرسش‌های متداول مسافران</a>
+        <a href="" class="my-1">شرایط و قوانین مسافران</a>
+        <a href="" class="my-1">باشگاه مشتریان</a>
+      </div>
+
+      <div class="col-12 col-xl-2 d-flex flex-column align-items-start justify-content-evenly linki">
+        <h5 class="fw-bold mt-5 mt-xl-3 my-3">رانندگان</h5>
+        <a href="" class="my-1">دانلود اپ سفیر</a>
+        <a href="" class="my-1">ثبت نام راننده تاکسی اینترنتی</a>
+        <a href="" class="my-1">پرسش‌های متداول سفیران</a>
+        <a href="" class="my-1">شرایط و قوانین سفیران</a>
+        <a href="" class="my-1">باشگاه سفیران</a>
+      </div>
+
+      <div class="col-12 col-xl-2 d-flex flex-column align-items-start justify-content-start linki">
+        <h5 class="fw-bold mt-5 mt-xl-3 my-3">کسب و کارها</h5>
+        <a href="" class="my-1">پنل سازمانی تپسی</a>
+        <a href="" class="my-1">خرید کد اعتبار و تخفیف</a>
+        <a href="" class="my-1">دریافت API</a>
+      </div>
+
+
+  </div>
+  <div class="row p-0 mx-0">
+    <div class="col-12 col-xl-4">
+      <div class="row gx-2 gx-xl-1 my-3">
+
+        <div class="col-4 col-xl-3 ">
+          <div class="d-flex justify-content-center threeicon" style="border-radius: 12px; background-color: #f8f9fa;">
+            <img src="	https://tapsi.ir/images/etehadiye.png" alt="" class="" style="transform: scale(.6);">
+          </div>
+        </div>
+
+        <div class="col-4 col-xl-4 ">
+          <div class="d-flex justify-content-center threeicon" style="border-radius: 12px; background-color: #f8f9fa;">
+            <img src="	https://tapsi.ir/images/etehadiye.png" alt="" class="" style="transform: scale(.6);">
+          </div>
+        </div>
+
+        <div class="col-4 col-xl-3">
+          <div class="d-flex justify-content-center threeicon" style="border-radius: 12px; background-color: #f8f9fa;">
+            <img src="	https://tapsi.ir/images/etehadiye.png" alt="" class="" style="transform: scale(.6);">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 d-flex d-xl-none">
+      <p class="my-2 hogho" style="color: rgb(153, 153, 153);"> تمام حقوق مادی و معنوی این وبسایت متعلق به تپسی است.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 d-none d-xl-flex" style="margin-right: 110px;">
+      <p class="ejt m-0">تپسی در شبکه‌های اجتماعی</p>
+    </div>
+    <div class="col-12 col-xl-4 btnicon mt-1 d-flex justify-content-center justify-content-xl-start">
+      <a href="">
+        <i class="		fab fa-facebook-f mx-4 mx-xl-2"></i>
+      </a>
+      <a href="">
+        <i class="	fab fa-instagram mx-4 mx-xl-2"></i>
+      </a>
+      <a href="">
+        <i class="	fab fa-twitter mx-4 mx-xl-2"></i>
+      </a>
+      <a href="">
+        <i class="	fab fa-linkedin-in mx-4 mx-xl-2"></i>
+      </a>
+      <a href="">
+        <i class="fab fa-telegram-plane mx-4 mx-xl-2"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<script src="./app.js">
+
+</script>
+    <!-- bootrstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
