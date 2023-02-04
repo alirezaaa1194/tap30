@@ -47,27 +47,4 @@ setInterval(function () {
   }
   //   document.getElementById("radif").scrollLeft = counter * 80-80;
   document.querySelector(".radio" + counter).checked = true;
-if(radio1.checked==true){
-    counter=1;
-  }
-   if (radio2.checked == true) {
-     counter = 2;
-   }
-    if (radio3.checked == true) {
-      counter = 3;
-    }
-     if (radio4.checked == true) {
-       counter = 4;
-     }
-      if (radio5.checked == true) {
-        counter = 5;
-      } if (radio6.checked == true) {
-         counter = 6;
-       } if (radio7.checked == true) {
-          counter = 7;
-        } if (radio8.checked == true) {
-           counter = 8;
-         } if (radio9.checked == true) {
-            counter = 9;
-          }
 }, 6000);
