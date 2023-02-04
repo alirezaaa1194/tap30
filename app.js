@@ -1,12 +1,4 @@
-  let radio1=document.querySelector('.radio1');
-  let radio2=document.querySelector('.radio2');
-  let radio3=document.querySelector('.radio3');
-  let radio4=document.querySelector('.radio4');
-  let radio5=document.querySelector('.radio5');
-  let radio6=document.querySelector('.radio6');
-  let radio7=document.querySelector('.radio7');
-  let radio8=document.querySelector('.radio8');
-  let radio9=document.querySelector('.radio9');
+
 function menuBtnFunction(menuBtn) {
   menuBtn.classList.toggle("active");
 }
