@@ -396,6 +396,7 @@
     }
     .radif {
       overflow: scroll;
+      scroll-behavior: smooth;
     }
     .box {
       transform: scale(0.8);
